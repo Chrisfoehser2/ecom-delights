@@ -1,0 +1,14 @@
+.carousel-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  padding-top: 3px;
+}
+
+.promo-bar-item {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
