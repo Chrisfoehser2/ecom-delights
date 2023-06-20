@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { useNavModal } from "../components/context/NavModalContext";
 
-import { Trans } from "@lingui/macro";
-
 export default function HomePage() {
   return (
     <div className="home-container">
