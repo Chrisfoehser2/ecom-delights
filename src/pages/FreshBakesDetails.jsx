@@ -1,5 +1,6 @@
 import { getFood } from "../api";
 import { Link, useParams, useLocation, useLoaderData } from "react-router-dom";
+import { useShoppingCart } from "../components/context/cartContext";
 
 export function loader({ params }) {
   return getFood(params.id);
@@ -11,6 +12,20 @@ export default function ProductDetials() {
 
   const search = location.state?.search || "";
   const type = location.state?.type || "all";
+
+  const {
+    getItemQuantity,
+    increaseCartQuantity,
+    decreaseCartQuantity,
+    removeFromCart,
+  } = useShoppingCart();
+
+  let quantity = getItemQuantity(
+    product.id,
+    product.name,
+    product.imageUrl,
+    product.price
+  );
 
   return (
     <div className="product-detail-container">
@@ -27,10 +42,47 @@ export default function ProductDetials() {
             <span>{product.itemPrice}</span>
           </p>
           <p>{product.description}</p>
-          <button className="link-button">Add To Cart</button>
-          <i className={`product-type ${product.type} selected upperCase`}>
-            {product.type}
-          </i>
+          <div className="mt-auto">
+            {quantity === 0 ? (
+              <>
+                <button
+                  className="link-button"
+                  onClick={() =>
+                    increaseCartQuantity(
+                      product.id,
+                      product.name,
+                      product.imageUrl,
+                      product.price
+                    )
+                  }
+                >
+                  + Add To Cart
+                </button>
+                <i
+                  className={`product-type ${product.type} selected upperCase`}
+                >
+                  {product.type}
+                </i>
+              </>
+            ) : (
+              <div>
+                <div>
+                  <button onClick={() => decreaseCartQuantity(product.id)}>
+                    -
+                  </button>
+                  <div>
+                    <span>{quantity}</span> in cart
+                  </div>
+                  <button onClick={() => increaseCartQuantity(product.id)}>
+                    +
+                  </button>
+                </div>
+                <button onClick={() => removeFromCart(product.id)}>
+                  Remove
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

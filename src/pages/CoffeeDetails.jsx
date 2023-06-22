@@ -20,7 +20,12 @@ export default function ProductDetials() {
     removeFromCart,
   } = useShoppingCart();
 
-  let quantity = 0;
+  let quantity = getItemQuantity(
+    product.id,
+    product.name,
+    product.imageUrl,
+    product.price
+  );
 
   return (
     <div className="product-detail-container">
@@ -41,7 +46,20 @@ export default function ProductDetials() {
           <div className="mt-auto">
             {quantity === 0 ? (
               <>
-                <button className="link-button">+ Add To Cart</button>
+                <button
+                  className="link-button"
+                  onClick={() =>
+                    increaseCartQuantity(
+                      product.id,
+                      product.name,
+
+                      product.imageUrl,
+                      product.price
+                    )
+                  }
+                >
+                  + Add To Cart
+                </button>
                 <i
                   className={`product-type ${product.type} selected upperCase`}
                 >
@@ -51,13 +69,19 @@ export default function ProductDetials() {
             ) : (
               <div>
                 <div>
-                  <button>-</button>
+                  <button onClick={() => decreaseCartQuantity(product.id)}>
+                    -
+                  </button>
                   <div>
                     <span>{quantity}</span> in cart
                   </div>
-                  <button>+</button>
+                  <button onClick={() => increaseCartQuantity(product.id)}>
+                    +
+                  </button>
                 </div>
-                <button>Remove</button>
+                <button onClick={() => removeFromCart(product.id)}>
+                  Remove
+                </button>
               </div>
             )}
           </div>

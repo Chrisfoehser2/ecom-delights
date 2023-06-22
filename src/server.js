@@ -10,6 +10,7 @@ createServer({
       id: "1",
       name: "Lock & Dam #11™ ground",
       itemPrice: "$12/Bag",
+      price: 12,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "lockdamcoffee.jpeg",
@@ -19,6 +20,7 @@ createServer({
       id: "2",
       name: "Sample Pack - six ground coffee packs",
       itemPrice: "$20/Pack",
+      price: 20,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "samplecoffee.jpeg",
@@ -28,6 +30,7 @@ createServer({
       id: "3",
       name: "Mississippi Grogg® ground",
       itemPrice: "$12/Bag",
+      price: 12,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "mississippicoffee.jpeg",
@@ -37,6 +40,7 @@ createServer({
       id: "4",
       name: "Cow Tipper® ground",
       itemPrice: "$12/Bag",
+      price: 12,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "cowtippercoffee.jpeg",
@@ -46,6 +50,7 @@ createServer({
       id: "5",
       name: "Coffee Gift Basket",
       itemPrice: "$35/Basket",
+      price: 35,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "GiftBasketcoffee.jpeg",
@@ -55,6 +60,7 @@ createServer({
       id: "6",
       name: " Crumb Cake",
       itemPrice: "$27/Cake",
+      price: 27,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "crumbcake.jpeg",
@@ -63,7 +69,8 @@ createServer({
     server.create("product", {
       id: "7",
       name: "All Butter Croissant ",
-      itemPrice: "$4.50/Croissant",
+      itemPrice: "$5/Croissant",
+      price: 5,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "croissant.jpeg",
@@ -72,7 +79,8 @@ createServer({
     server.create("product", {
       id: "8",
       name: " Ham and Gruyere Croissant",
-      itemPrice: "$5.50/Croissant",
+      itemPrice: "$6/Croissant",
+      price: 6,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "hamgruyere.jpeg",
@@ -81,7 +89,8 @@ createServer({
     server.create("product", {
       id: "9",
       name: " Pastry Cream Filled Cruffins",
-      itemPrice: "$4.50/Pastry",
+      itemPrice: "$4/Pastry",
+      price: 4,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "cruffins.jpeg",
@@ -90,7 +99,8 @@ createServer({
     server.create("product", {
       id: "10",
       name: "Banana Chocolate Chip Streusel Coffee Cake",
-      itemPrice: "$4.50/Slice",
+      itemPrice: "$4/Slice",
+      price: 4,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "cakebars.jpeg",
@@ -100,6 +110,7 @@ createServer({
       id: "11",
       name: " Ovalware RJ3 Cold Brew Maker",
       itemPrice: "$36/Per",
+      price: 36,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "ovalwarediy.jpeg",
@@ -109,6 +120,7 @@ createServer({
       id: "12",
       name: " Osso Ceramics Pour Over",
       itemPrice: "$42/Per",
+      price: 42,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "ossopourover.jpeg",
@@ -118,6 +130,7 @@ createServer({
       id: "13",
       name: "Hario V60 Paper Filter, 02 White 40ct Box",
       itemPrice: "$5/Box",
+      price: 5,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "filtersdiy.jpeg",
@@ -127,6 +140,7 @@ createServer({
       id: "14",
       name: " KitchenAid® Artisan Stand Mixer, 5 Qt.",
       itemPrice: "$450/Per",
+      price: 450,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "kitchenaid.png",
@@ -136,6 +150,7 @@ createServer({
       id: "15",
       name: " Sur La Table Platinum Pro Half Sheet Pans",
       itemPrice: "$60 For 2 Pans",
+      price: 60,
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut quasi a ullam quos aliquam natus ab ipsam nulla suscipit.",
       imageUrl: "pans.png",

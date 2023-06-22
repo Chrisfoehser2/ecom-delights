@@ -21,6 +21,7 @@ import FreshBakesDetails, {
 import CoffeeDetails, {
   loader as coffeeDetailLoader,
 } from "./pages/CoffeeDetails";
+import Checkout from "./pages/ShoppingCartCheckOut";
 
 import "./server";
 import "./App.css";
@@ -54,6 +55,7 @@ const router = createBrowserRouter(
         element={<ProductDetials />}
         loader={productDetailLoader}
       />
+      <Route path="checkout" element={<Checkout />} />
     </Route>
   )
 );
