@@ -43,7 +43,7 @@ export default function Checkout() {
             );
           })}
           <h2 className="cart-total">
-            Your Total: ${" "}
+            Your Total: $
             {cartItems.reduce((total, cartItem) => {
               const item = cartItems.find((i) => i.id === cartItem.id);
               return total + (item?.price || 0) * cartItem.quantity;
