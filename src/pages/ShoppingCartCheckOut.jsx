@@ -42,7 +42,13 @@ export default function Checkout() {
               </div>
             );
           })}
-          <h2 className="cart-total">Your Total: </h2>
+          <h2 className="cart-total">
+            Your Total: ${" "}
+            {cartItems.reduce((total, cartItem) => {
+              const item = cartItems.find((i) => i.id === cartItem.id);
+              return total + (item?.price || 0) * cartItem.quantity;
+            }, 0)}
+          </h2>
         </div>
       )}
     </>
