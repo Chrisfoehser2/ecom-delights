@@ -4,7 +4,7 @@ My portfolio project simulating an ecommerce website for freshh coffee and baked
 
 Still a work in progress, currently implementing the language feature.
 
-Future updates to happen: - Full login/account page -Mock delivery showing delivery information
+Future updates to happen: - Full login/account page -Mock delivery showing delivery information -Search bar to fully take you to product page
 
 Check it out here: https://ecom-delight.netlify.app/
 
