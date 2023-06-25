@@ -563,7 +563,7 @@ footer {
 /* Filled Check out */
 .check-out {
   display: flex;
-  margin: 10px 30px 0 30px;
+  margin: 10px 220px 0 220px;
   padding: 10px 20px;
   border: 1px solid rgba(104, 104, 104, 0.229);
   border-radius: 6px;
@@ -585,11 +585,15 @@ footer {
 .product-details {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   margin-top: 30px;
+}
+.zero-margin {
+  margin-right: 6%;
 }
 .product-pricing {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -612,6 +616,7 @@ footer {
 }
 .your-cart {
   margin: 20px;
+  margin-left: 16%;
   letter-spacing: -0.02em;
   line-height: 1em;
   text-transform: uppercase;

@@ -2,7 +2,12 @@ import { useShoppingCart } from "../components/context/cartContext";
 import { Link } from "react-router-dom";
 
 export default function Checkout() {
-  const { cartItems, removeFromCart } = useShoppingCart();
+  const {
+    cartItems,
+    removeFromCart,
+    increaseCartQuantity,
+    decreaseCartQuantity,
+  } = useShoppingCart();
 
   return (
     <>
@@ -29,6 +34,23 @@ export default function Checkout() {
                     <div className="product-details">
                       <p>Quantity: x {item.quantity}</p>
                       <p> Price: ${item.price}</p>
+                    </div>
+                    <div className="quantity-btn-layout zero-margin">
+                      <button
+                        className="quantity-btn"
+                        onClick={() => decreaseCartQuantity(item.id)}
+                      >
+                        -
+                      </button>
+                      <div>
+                        <span>{item.quantity}</span> in cart
+                      </div>
+                      <button
+                        className="quantity-btn"
+                        onClick={() => increaseCartQuantity(item.id)}
+                      >
+                        +
+                      </button>
                     </div>
                     <div className="product-total">
                       <h4>${item.price * item.quantity}</h4>
