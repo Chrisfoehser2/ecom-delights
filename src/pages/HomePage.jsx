@@ -32,21 +32,27 @@ export default function HomePage() {
             className="bullet-img"
             src="https://images.unsplash.com/photo-1605677594331-28630ceb842d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
           />
-          <p className="bullet-text">Fresh Coffee</p>
+          <div className="bullet-text">
+            <p className="bullet-text">Fresh Coffee</p>
+          </div>
         </div>
         <div>
           <img
             className="bullet-img"
             src="https://images.unsplash.com/photo-1606282142799-5df89dbc835e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
           />
-          <p className="bullet-text-2">Baked Goods</p>
+          <div className="bullet-text-2">
+            <p className="bullet-text-2">Baked Goods</p>
+          </div>
         </div>
         <div>
           <img
             className="bullet-img"
             src="https://plus.unsplash.com/premium_photo-1661311831497-a434dbfbd219?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
           />
-          <p className="bullet-text-3">DIY Supplies</p>
+          <div className="bullet-text-3">
+            <p className="bullet-text-3">DIY Supplies</p>
+          </div>
         </div>
       </div>
     </div>

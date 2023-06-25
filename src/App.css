@@ -124,14 +124,9 @@ footer {
 .home-container {
   background-color: white;
 }
-@media only screen and (min-width: 1500px) {
-  .home-img {
-    height: 750px;
-  }
-}
 
 .home-img {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   height: 665px;
 }
@@ -140,9 +135,31 @@ footer {
   position: absolute;
   top: 320px;
   left: 200px;
+
   font-family: sans-serif;
   color: whitesmoke;
 }
+
+@media screen and (min-width: 1550px) {
+  .cover-text {
+    position: absolute;
+    top: 320px;
+    left: 300px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .cover-text {
+    position: absolute;
+    top: 320px;
+    left: 485px;
+  }
+
+  .home-img {
+    height: 837px;
+  }
+}
+
 .cover-text h6 {
   font-size: 15px;
   letter-spacing: 0.1em;
@@ -197,6 +214,25 @@ footer {
   letter-spacing: -0.03em;
 }
 
+@media screen and (min-width: 1920px) {
+  .home-bullets img {
+    width: 520px;
+    height: 450px;
+  }
+  .bullet-text {
+    margin-left: 15.5px;
+    font-size: 24px;
+  }
+  .bullet-text-2 {
+    margin-left: 28.5px;
+    font-size: 24px;
+  }
+  .bullet-text-3 {
+    margin-left: 40.5px;
+    font-size: 24px;
+  }
+}
+
 .home-bullets {
   position: relative;
   display: grid;
@@ -221,22 +257,25 @@ footer {
 
 .bullet-text {
   position: absolute;
-  top: 50%;
-  left: 13%;
-  margin-top: -39px;
+  top: 40%;
+  /* left: 15.5%; */
+  left: 9.3%;
+  width: 420px;
 }
 .bullet-text-2 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -39px;
-  margin-left: -56px;
+  top: 40%;
+  left: 34.5%;
+  /* margin-top: -39px;
+  margin-left: -56px; */
+  width: 420px;
 }
 .bullet-text-3 {
   position: absolute;
-  top: 50%;
-  left: 78%;
-  margin-top: -39px;
+  top: 40%;
+  left: 59.5%;
+  /* margin-top: -39px; */
+  width: 420px;
 }
 /* Homepage End */
 /* All Products Page */
