@@ -12,3 +12,10 @@
   font-size: 13px;
   font-weight: bold;
 }
+
+@media screen and (mix-width: 1920px) {
+  .carousel-container {
+    height: 40px;
+    font-size: 50px;
+  }
+}

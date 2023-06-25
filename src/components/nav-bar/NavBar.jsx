@@ -38,19 +38,20 @@ export default function NavBar() {
             )}
           </div>
 
-          <div>
+          <div className="gap">
             <Cart />
           </div>
-          <div>
+          <div className="gap">
             <i onClick={toggle} className="bi bi-person-circle"></i>
           </div>
-          <div>
+          <div className="gap">
             <i className="bi bi-translate"></i>
           </div>
         </div>
       </div>
 
       <Promo />
+
       <div>
         <Modal />
       </div>

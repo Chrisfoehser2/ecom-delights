@@ -158,6 +158,17 @@ footer {
   .home-img {
     height: 837px;
   }
+
+  .nav-links {
+    font-size: 23px;
+  }
+
+  .gap {
+    margin-left: 15px;
+  }
+  .top-bar {
+    font-size: 18px;
+  }
 }
 
 .cover-text h6 {
@@ -220,16 +231,22 @@ footer {
     height: 450px;
   }
   .bullet-text {
-    margin-left: 15.5px;
+    margin-left: 17.5px;
     font-size: 24px;
   }
   .bullet-text-2 {
-    margin-left: 28.5px;
+    margin-left: 26.5px;
     font-size: 24px;
   }
   .bullet-text-3 {
-    margin-left: 40.5px;
+    margin-left: 28.5px;
     font-size: 24px;
+  }
+  .about-us {
+    font-size: 25px;
+  }
+  .about-us h1 {
+    font-size: 60px;
   }
 }
 
@@ -260,22 +277,22 @@ footer {
   top: 40%;
   /* left: 15.5%; */
   left: 9.3%;
-  width: 420px;
+  width: 320px;
 }
 .bullet-text-2 {
   position: absolute;
   top: 40%;
-  left: 34.5%;
+  left: 36.8%;
   /* margin-top: -39px;
   margin-left: -56px; */
-  width: 420px;
+  width: 320px;
 }
 .bullet-text-3 {
   position: absolute;
   top: 40%;
-  left: 59.5%;
+  left: 65.55%;
   /* margin-top: -39px; */
-  width: 420px;
+  width: 250px;
 }
 /* Homepage End */
 /* All Products Page */
