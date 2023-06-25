@@ -66,18 +66,27 @@ export default function ProductDetials() {
               </>
             ) : (
               <div>
-                <div>
-                  <button onClick={() => decreaseCartQuantity(product.id)}>
+                <div className="quantity-btn-layout">
+                  <button
+                    className="quantity-btn"
+                    onClick={() => decreaseCartQuantity(product.id)}
+                  >
                     -
                   </button>
                   <div>
                     <span>{quantity}</span> in cart
                   </div>
-                  <button onClick={() => increaseCartQuantity(product.id)}>
+                  <button
+                    className="quantity-btn"
+                    onClick={() => increaseCartQuantity(product.id)}
+                  >
                     +
                   </button>
                 </div>
-                <button onClick={() => removeFromCart(product.id)}>
+                <button
+                  className="remove-btn"
+                  onClick={() => removeFromCart(product.id)}
+                >
                   Remove
                 </button>
               </div>
