@@ -297,8 +297,8 @@ footer {
 /* Homepage End */
 /* All Products Page */
 .item-tile {
-  max-width: 210px;
-  max-height: 300px;
+  max-width: 245.3px;
+  max-height: 400px;
   text-align: center;
   border: 1px solid rgba(225, 216, 216, 0.87);
   border-radius: 6px;
@@ -308,7 +308,7 @@ footer {
   box-shadow: 0 0 8px -3.5px black;
 }
 .product-img {
-  width: 208.4px;
+  width: 244px;
   height: 200px;
   border-radius: 6px 6px 0 0;
 }
@@ -324,7 +324,7 @@ footer {
   grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
   justify-items: center;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
   height: 100%;
   padding: 30px;
   margin-bottom: 155px;
@@ -488,26 +488,37 @@ footer {
 }
 /* Product Detail Page  End */
 /* Profile Modal styling */
-
-.modalContainer {
+.test-box {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(99, 90, 90, 0.394);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.modalContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f7f7f7;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   border: none;
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 50%;
   padding-right: 2.5%;
+  border-radius: 10px;
 }
 .modalContainer input {
   color: black;
-  background-color: white;
+  background-color: rgba(178, 175, 175, 0.24);
   margin: 10px;
   height: 30px;
 }

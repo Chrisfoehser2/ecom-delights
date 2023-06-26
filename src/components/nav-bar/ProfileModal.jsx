@@ -6,7 +6,7 @@ export default function Modal(props) {
   return (
     <>
       {openModal ? (
-        <div>
+        <div className="test-box">
           <dialog className="modalContainer">
             <form formMethod="dialog">
               <h1>Account Information</h1>
