@@ -248,6 +248,9 @@ footer {
   .about-us h1 {
     font-size: 60px;
   }
+  .modalContainer {
+    height: 70%;
+  }
 }
 
 .home-bullets {
@@ -512,7 +515,7 @@ footer {
   text-align: center;
   border: none;
   width: 40%;
-  height: 50%;
+  height: 70%;
   padding-right: 2.5%;
   border-radius: 10px;
 }
