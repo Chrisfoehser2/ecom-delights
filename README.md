@@ -14,4 +14,4 @@ Check it out here: https://ecom-delight.netlify.app/
 
 Purchase your favorite yummy delights to start your day off right!
 
-***NOTE: Built on Mac, has some bugs with windows styling. Use on Mac for best presentation, still operational on Windows styling is slightly off. 
+**NOTE: Built on Mac, has some bugs with windows styling. Use on Mac for best presentation, still operational on Windows styling is slightly off. 
